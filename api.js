@@ -5,8 +5,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 let pets = [
-    { id: 1, name: 'Pelota para Perros', type: 'Juguete', price: 9.99 },
-    { id: 2, name: 'Rascador para Gatos', type: 'Mueble', price: 29.99 }
+    { id: 1, name: "Chunky Cordero 12 KG", price: 150.000 },
+    { id: 2, name: "Juguete para gatos", price: 30.000 },
+    { id: 3, name: "Jabon Herbal Care Perros y Gatos", price: 19.000 },
+    { id: 4, name: "Arena para Gato Petys 4.5 Kg", price: 22.000 },
+    { id: 5, name: "Peinilla para perro Universal", price: 16.000 },
 ];
 
 app.get('/api/pets', (req, res) => {
